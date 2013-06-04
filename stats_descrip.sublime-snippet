@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+*Visualisation des stats descriptives sur les donnees;
+proc freq data=${1:dataset} ${2:order=freq};
+table _char_ / missing;
+run;
+
+ods select basicmeasures quantiles extremeobs missingvalues ssplots;
+proc univariate data=${1:dataset};
+run;
+ 
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>stats_descrip</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sas</scope>
+</snippet>

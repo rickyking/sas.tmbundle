@@ -1,13 +1,12 @@
 <snippet>
   <content><![CDATA[
-proc sort ${1:nodupkey }data = ${2:gnu} out = ${3:gnu} ;
-  by ${4:mrn adate} ;
+proc freq data = ${1:gnu} ${2:order = freq} ;
+  tables ${3:v1} * ${4:v2} / missing ${5:format = commax9.2} ;
 run ;
-$0
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>srt</tabTrigger>
+  <tabTrigger>freq</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.sas</scope>
-  <description>proc sort</description>
+  <description>proc freq</description>
 </snippet>
