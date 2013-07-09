@@ -18,3 +18,7 @@ List of Snippets
 * stats_descrip: proc freq for qualitative variables and proc univariate quantitave variables with boxplot and extreme observations
 * tit : title statement;
 
+Future Snippets
+----------------
+
+* 

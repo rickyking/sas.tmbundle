@@ -1,8 +1,8 @@
 <snippet>
   <content><![CDATA[
-proc freq data = ${1:gnu} ${2:order = freq} ;
-  tables ${3:v1} * ${4:v2} / missing ${5:format = commax9.2} ;
-run ;
+proc freq data = ${1:gnu} ${2:order = freq};
+  tables ${3:v1} * ${4:v2} / missing ${5:format = commax9.2};
+run;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>freq</tabTrigger>

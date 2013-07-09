@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-proc download data = ${1:gnu} out = s.${1} ;
-run ;
+proc download data = $1.$2 out = $3.$2;
+run;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>dl</tabTrigger>

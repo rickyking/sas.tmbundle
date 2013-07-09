@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-Filename forimport "${1:filename}";
+Filename import "${1:filename}";
 PROC IMPORT
-DATAFILE=forimport
+DATAFILE=import
 OUT=${2:<libref.>SAS data set <(SAS data set options)>}
 DBMS=excel ${3:REPLACE};
 sheet="${4:sheetname}";
